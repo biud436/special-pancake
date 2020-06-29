@@ -62,7 +62,7 @@
 ```json
 {
     "Stage" : 1,
-    "NumberOfMonsters" : [6, 10], // 6 ~ 10 마리
+    "NumberOfMonsters" : [6, 10],
     "Monsters" : [
         {
             "Name" : "고블린",

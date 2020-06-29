@@ -59,25 +59,26 @@
 
 - 데이터 구조는 다음과 같아야 한다.
 
-```json
+```jsonc
+// https://github.com/github/linguist/blob/master/lib/linguist/languages.yml
 {
     "Stage" : 1,
-    "NumberOfMonsters" : [6, 10],
+    "NumberOfMonsters" : [6, 10], // 6에서 10램덤
     "Monsters" : [
         {
             "Name" : "고블린",
             "Id": 1,
             "Params" : [
-                0, 0, 0, 0, 0
+                0, 0, 0, 0, 0 // HP, MP, 공격력, 방어력, 민첩력
             ],
             "RegenTime": 30,
-            "Position": [0, 0],
-            "DeathEffect": 0,
+            "Position": [0, 0], // 벡터
+            "DeathEffect": 0, // 0 : 시체가 보여지면서 사라짐, 1 : 이펙트 후 사라짐
             "Image": "Goblin",
             "Items": [
                 {
                     "Name" : "체력 포션",
-                    "Percentage" : 0.6,
+                    "Percentage" : 0.6, // 60% 확률로 획득!
                 }
             ],
         },
@@ -94,7 +95,7 @@
             "Items": [
                 {
                     "Name" : "체력 포션",
-                    "Percentage" : 0.2,
+                    "Percentage" : 0.2, // 60% 확률로 획득!
                 }
             ]
         },
